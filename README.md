@@ -8,7 +8,7 @@ Enjoy!
 
 Author: Ben Grunfeld
 
-## Logo
+## How to Create the Logo
 
 - Source: https://www.svgrepo.com/svg/532617/bones?edit=true
 - Thickness: 27%
