@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { FieldValues, UseFormRegister } from "react-hook-form";
 
 export type RadioButtonProps = {
@@ -8,6 +8,7 @@ export type RadioButtonProps = {
   required?: boolean;
   labelText?: string | ReactNode;
   errorMessage?: string | undefined;
+  key?: any;
 };
 
 const RadioButton = ({
@@ -17,11 +18,12 @@ const RadioButton = ({
   register,
   required,
   errorMessage,
+  key,
 }: RadioButtonProps) => {
   const radioId = `radio-${value}`;
 
   return (
-    <div className="radio-button">
+    <div className="radio-button" key={key}>
       <label htmlFor={radioId} className="radio-button-label">
         <input
           id={radioId}
