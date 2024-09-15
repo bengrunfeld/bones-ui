@@ -1,0 +1,24 @@
+{
+  "name": "bones-ui",
+  "version": "1.0.0",
+  "description": "A bare-bones accessibility focussed UI library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bengrunfeld/bones-ui.git"
+  },
+  "keywords": [
+    "accessible",
+    "react",
+    "ui"
+  ],
+  "author": "bengrunfeld",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bengrunfeld/bones-ui/issues"
+  },
+  "homepage": "https://github.com/bengrunfeld/bones-ui#readme"
+}
