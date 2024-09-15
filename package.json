@@ -20,5 +20,19 @@
   "bugs": {
     "url": "https://github.com/bengrunfeld/bones-ui/issues"
   },
-  "homepage": "https://github.com/bengrunfeld/bones-ui#readme"
+  "homepage": "https://github.com/bengrunfeld/bones-ui#readme",
+  "devDependencies": {
+    "prettier": "3.3.3",
+    "typescript": "^5.6.2"
+  },
+  "exports": {
+    "./Button": "./src/Button/Button.tsx",
+    "./card": "./src/card.tsx",
+    "./code": "./src/code.tsx",
+    "./CheckBox": "./src/CheckBox/CheckBox.tsx",
+    "./Input": "./src/Input/Input.tsx",
+    "./RadioButtonGroup": "./src/RadioButtonGroup/RadioButtonGroup.tsx",
+    "./CustomSelect": "./src/CustomSelect/CustomSelect.tsx",
+    "./Select": "./src/Select/Select.tsx"
+  }
 }
