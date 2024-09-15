@@ -1,4 +1,4 @@
-# Tendon Dev
+# Tendon UI
 
 Tendon-UI is an accessibilty compliant bare-bones UI library that uses react-hook-form.
 
@@ -6,12 +6,4 @@ Other UI frameworks like Material UI are highly opinionated as far as CSS and be
 
 Enjoy!
 
-Author: Ben Grunfeld
-
-## How to Create the Logo
-
-- Source: https://www.svgrepo.com/svg/532617/bones?edit=true
-- Thickness: 27%
-- Color: #3d3d3d
-- BG Shape: Circle
-- BG Color: #ffffff
+Author: @bengrunfeld
