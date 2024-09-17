@@ -1,10 +1,10 @@
 import React, { ReactNode } from "react";
-import RadioButton, { RadioButtonProps } from "./RadioButton";
-import { FieldValues, UseFormRegister } from "react-hook-form";
+// import RadioButton, { RadioButtonProps } from "./RadioButton";
+const RadioButton = require("./RadioButton");
 
 export type RadioButtonGroupProps = {
   groupName: string;
-  radioButtons: RadioButtonProps[];
+  radioButtons: any; // RadioButtonProps[];
   groupLabel?: string | ReactNode;
   error?: string;
 };

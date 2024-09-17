@@ -1,6 +1,6 @@
 {
   "name": "tendon-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A bare-bones accessibility focussed UI library",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/bengrunfeld/tendon-ui#readme",
   "devDependencies": {
+    "@types/node": "^22.5.5",
     "prettier": "3.3.3",
     "typescript": "^5.6.2"
   },
