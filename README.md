@@ -7,3 +7,7 @@ Other UI frameworks like Material UI are highly opinionated as far as CSS and be
 Enjoy!
 
 Author: @bengrunfeld
+
+## TODO:
+
+https://www.geeksforgeeks.org/how-to-create-an-npm-library-from-react-components/
