@@ -23,7 +23,7 @@ const RadioButtonGroup = ({
     <label id={`${groupName}-label`} className="radio-group-label">
       {groupLabel}
     </label>
-    {radioButtons.map((item: any) => (
+    {radioButtons.map((item: RadioButtonProps) => (
       <RadioButton
         key={item.value}
         value={item.value}
