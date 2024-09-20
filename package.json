@@ -3,15 +3,8 @@
   "version": "1.0.4",
   "description": "A bare-bones accessibility focussed UI library",
   "main": "dist/index.js",
-  "exports": {
-    "Button": "./dist/Button/index.ts",
-    "CheckBox": "./dist/CheckBox/index.ts",
-    "Input": "./dist/Input/index.ts",
-    "RadioButtonGroup": "./dist/RadioButtonGroup/index.ts",
-    "Select": "./dist/Select/index.ts"
-  },
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -43,8 +36,9 @@
   },
   "dependencies": {
     "@babel/cli": "^7.25.6",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "@types/react": "^18.3.8",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-hook-form": "^7.53.0"
   },
   "peerDependencies": {
