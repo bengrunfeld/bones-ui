@@ -17,6 +17,7 @@ export type SelectProps = {
   required?: boolean;
   disabled?: boolean;
   placeholderText?: string;
+  additionalProps?: any;
 };
 
 const Select = ({
@@ -30,6 +31,7 @@ const Select = ({
   placeholderText,
   required = false,
   disabled = false,
+  additionalProps,
 }: SelectProps) => {
   return (
     <div className="native-select-component">
@@ -44,6 +46,7 @@ const Select = ({
         {...register(name, {
           required: required ? "This field is required" : false,
         })}
+        {...additionalProps}
       >
         <option value="">{placeholderText || "Select an option"}</option>
         {options.map((option) => (
