@@ -1,6 +1,6 @@
 {
   "name": "tendon-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A bare-bones accessibility focussed UI library",
   "main": "dist/index.js",
   "scripts": {
