@@ -2,9 +2,16 @@
   "name": "tendon-ui",
   "version": "1.0.4",
   "description": "A bare-bones accessibility focussed UI library",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "exports": {
+    "Button": "./dist/Button/index.ts",
+    "CheckBox": "./dist/CheckBox/index.ts",
+    "Input": "./dist/Input/index.ts",
+    "RadioButtonGroup": "./dist/RadioButtonGroup/index.ts",
+    "Select": "./dist/Select/index.ts"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -22,13 +29,26 @@
   },
   "homepage": "https://github.com/bengrunfeld/tendon-ui#readme",
   "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
     "@types/node": "^22.5.5",
+    "babel-loader": "^9.2.1",
     "prettier": "3.3.3",
-    "typescript": "^5.6.2"
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.2",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "@babel/cli": "^7.25.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }

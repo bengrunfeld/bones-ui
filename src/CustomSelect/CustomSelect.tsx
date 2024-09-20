@@ -1,13 +1,13 @@
 import React, { useState, useRef } from "react";
 import { FieldValues, UseFormRegister } from "react-hook-form";
 
-export type Option = {
+export type SelectOption = {
   value: string;
   label: string;
 };
 
 export type SelectProps = {
-  options: Option[];
+  options: SelectOption[];
   label: string;
   name: string;
   onChange: (value: string) => void;
@@ -32,7 +32,7 @@ const Select = ({
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
-  const handleOptionClick = (option: Option) => {
+  const handleOptionClick = (option: SelectOption) => {
     setSelectedValue(option.value);
     onChange(option.value);
     setIsOpen(false);
