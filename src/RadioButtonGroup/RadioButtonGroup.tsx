@@ -9,7 +9,6 @@ export type RadioButtonProps = {
   required?: boolean;
   labelText?: string | ReactNode;
   errorMessage?: string | undefined;
-  key?: any;
 };
 
 export const RadioButton = ({
@@ -19,12 +18,11 @@ export const RadioButton = ({
   register,
   required,
   errorMessage,
-  key,
 }: RadioButtonProps) => {
   const radioId = `radio-${value}`;
 
   return (
-    <div className="radio-button" key={key}>
+    <div className="radio-button">
       <label htmlFor={radioId} className="radio-button-label">
         <input
           id={radioId}
