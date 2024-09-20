@@ -1,7 +1,45 @@
 import React, { ReactNode } from "react";
-import { RadioButtonProps } from "./RadioButton";
-// import RadioButton, { RadioButtonProps } from "./RadioButton";
-const RadioButton = require("./RadioButton");
+
+import { FieldValues, UseFormRegister } from "react-hook-form";
+
+export type RadioButtonProps = {
+  value: string;
+  register: UseFormRegister<FieldValues>;
+  groupName: string;
+  required?: boolean;
+  labelText?: string | ReactNode;
+  errorMessage?: string | undefined;
+  key?: any;
+};
+
+export const RadioButton = ({
+  value,
+  labelText,
+  groupName,
+  register,
+  required,
+  errorMessage,
+  key,
+}: RadioButtonProps) => {
+  const radioId = `radio-${value}`;
+
+  return (
+    <div className="radio-button" key={key}>
+      <label htmlFor={radioId} className="radio-button-label">
+        <input
+          id={radioId}
+          type="radio"
+          value={value}
+          className="radio-button-input"
+          {...register(groupName, {
+            required: required ? errorMessage : false,
+          })}
+        />
+        <span className="radio-button-label-text">{labelText}</span>
+      </label>
+    </div>
+  );
+};
 
 export type RadioButtonGroupProps = {
   groupName: string;
@@ -23,7 +61,7 @@ const RadioButtonGroup = ({
     <label id={`${groupName}-label`} className="radio-group-label">
       {groupLabel}
     </label>
-    {radioButtons.map((item: RadioButtonProps) => (
+    {radioButtons.map((item: any) => (
       <RadioButton
         key={item.value}
         value={item.value}
