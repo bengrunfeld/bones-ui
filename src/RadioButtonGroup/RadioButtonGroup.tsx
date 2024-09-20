@@ -46,7 +46,7 @@ export type RadioButtonGroupProps = {
   error?: string;
 };
 
-const RadioButtonGroup = ({
+export const RadioButtonGroup = ({
   radioButtons,
   groupLabel,
   groupName,
